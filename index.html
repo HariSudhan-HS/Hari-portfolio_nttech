@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HariSudhan M - Frontend Developer Portfolio | HTML5, CSS3, JavaScript" />
+  <meta name="keywords" content="HariSudhan, Frontend Developer, HTML5, CSS3, JavaScript, Chennai" />
+  <meta name="author" content="HariSudhan M" />
+  <title>HariSudhan M | Frontend Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">HS</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <p class="loader-text">Loading Portfolio...</p>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo">HS<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#strengths" class="nav-link">Strengths</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<aside class="drawer" id="drawer">
+  <button class="drawer-close" id="drawerClose"><i class="fas fa-times"></i></button>
+  <ul class="drawer-links">
+    <li><a href="#hero" class="drawer-link">Home</a></li>
+    <li><a href="#about" class="drawer-link">About</a></li>
+    <li><a href="#skills" class="drawer-link">Skills</a></li>
+    <li><a href="#education" class="drawer-link">Education</a></li>
+    <li><a href="#projects" class="drawer-link">Projects</a></li>
+    <li><a href="#strengths" class="drawer-link">Strengths</a></li>
+    <li><a href="#contact" class="drawer-link">Contact</a></li>
+  </ul>
+</aside>
+
+<!-- HERO SECTION -->
+<section id="hero">
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-content reveal">
+    <div class="hero-photo-wrap">
+      <img src="aiease_1776531493816.jpg" alt="HariSudhan M" class="hero-photo" id="profileImg" />
+    </div>
+    <h1 class="hero-name">HariSudhan <span class="grad">M</span></h1>
+    <p class="hero-role">Frontend Developer</p>
+    <p class="hero-typed"><span id="typed"></span><span class="cursor">|</span></p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator"><div class="scroll-dot"></div></div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title reveal">About <span class="grad">Me</span></h2>
+    <div class="about-grid reveal">
+      <div class="about-img-wrap">
+        <img src="aiease_1776531493816.jpg" alt="HariSudhan M" id="aboutImg" />
+        <div class="about-img-glow"></div>
+      </div>
+      <div class="about-text">
+        <h3>Enthusiastic <span class="grad">Frontend Developer</span></h3>
+        <p>Enthusiastic Frontend Developer with strong skills in HTML5, CSS3, and JavaScript. Experienced in building responsive and user-friendly web interfaces using Flexbox and CSS Grid. Passionate about improving UI quality, accessibility, and frontend best practices. Interested in contributing to AI-based frontend evaluation and enhancing code quality.</p>
+        <div class="about-info">
+          <div><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu</div>
+          <div><i class="fas fa-home"></i> Native: Kallakurichi</div>
+          <div><i class="fas fa-envelope"></i> harisudhan24042007@gmail.com</div>
+          <div><i class="fas fa-phone"></i> 9786107285</div>
+        </div>
+        <a href="https://www.linkedin.com/in/hari-sudhan-629456343" target="_blank" class="btn btn-primary">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title reveal">My <span class="grad">Skills</span></h2>
+    <div class="cards-grid">
+      <div class="glass-card skill-card reveal">
+        <div class="skill-icon"><i class="fab fa-html5"></i></div>
+        <h3>HTML5</h3>
+        <div class="progress-bar"><div class="progress-fill" data-w="90"></div></div>
+        <span class="skill-pct">90%</span>
+      </div>
+      <div class="glass-card skill-card reveal">
+        <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+        <h3>CSS3</h3>
+        <div class="progress-bar"><div class="progress-fill" data-w="85"></div></div>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="glass-card skill-card reveal">
+        <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+        <h3>JavaScript</h3>
+        <div class="progress-bar"><div class="progress-fill" data-w="75"></div></div>
+        <span class="skill-pct">75%</span>
+      </div>
+      <div class="glass-card skill-card reveal">
+        <div class="skill-icon"><i class="fab fa-java"></i></div>
+        <h3>Java (OOP)</h3>
+        <div class="progress-bar"><div class="progress-fill" data-w="70"></div></div>
+        <span class="skill-pct">70%</span>
+      </div>
+      <div class="glass-card skill-card reveal">
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <h3>SQL</h3>
+        <div class="progress-bar"><div class="progress-fill" data-w="65"></div></div>
+        <span class="skill-pct">65%</span>
+      </div>
+      <div class="glass-card skill-card reveal">
+        <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+        <h3>Git &amp; GitHub</h3>
+        <div class="progress-bar"><div class="progress-fill" data-w="80"></div></div>
+        <span class="skill-pct">80%</span>
+      </div>
+      <div class="glass-card skill-card reveal">
+        <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Responsive Design</h3>
+        <div class="progress-bar"><div class="progress-fill" data-w="85"></div></div>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="glass-card skill-card reveal">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <h3>VS Code / MATLAB</h3>
+        <div class="progress-bar"><div class="progress-fill" data-w="75"></div></div>
+        <span class="skill-pct">75%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION SECTION -->
+<section id="education">
+  <div class="container">
+    <h2 class="section-title reveal">My <span class="grad">Education</span></h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card">
+          <span class="timeline-year">2024 – 2028</span>
+          <h3>BE Computer Science &amp; Engineering</h3>
+          <p class="timeline-school">SAEC, Chennai</p>
+          <p class="timeline-score">CGPA: <strong>6.5</strong></p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card">
+          <span class="timeline-year">2023 – 2024</span>
+          <h3>Higher Secondary (12th)</h3>
+          <p class="timeline-school">Govt. Boys Secondary School Thiyagadurgam, Kallakurichi</p>
+          <p class="timeline-score">Percentage: <strong>73.3%</strong></p>
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card">
+          <span class="timeline-year">2021 – 2022</span>
+          <h3>Secondary (10th)</h3>
+          <p class="timeline-school">Govt. Boys Secondary School Thiyagadurgam, Kallakurichi</p>
+          <p class="timeline-score">Percentage: <strong>47.4%</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES SECTION -->
+<section id="certificates">
+  <div class="container">
+    <h2 class="section-title reveal">Certificates &amp; <span class="grad">Achievements</span></h2>
+    <div class="cards-grid">
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <h3>Responsive Web Design</h3>
+        <p>Frontend Development Certification covering HTML5, CSS3, and responsive layouts.</p>
+      </div>
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-award"></i></div>
+        <h3>JavaScript Fundamentals</h3>
+        <p>Core JavaScript programming including DOM manipulation and ES6+ features.</p>
+      </div>
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-medal"></i></div>
+        <h3>Git &amp; GitHub</h3>
+        <p>Version control and collaborative development using Git and GitHub workflows.</p>
+      </div>
+      <div class="glass-card cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-star"></i></div>
+        <h3>UI/UX Basics</h3>
+        <p>Fundamental concepts in user interface design and user experience principles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title reveal">My <span class="grad">Projects</span></h2>
+    <div class="cards-grid">
+      <div class="glass-card project-card reveal" data-tilt>
+        <div class="project-icon"><i class="fas fa-cloud-sun"></i></div>
+        <h3>Weather App</h3>
+        <p>Responsive web application that displays real-time weather data with a clean and intuitive interface.</p>
+        <div class="project-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>REST API</span>
+        </div>
+      </div>
+      <div class="glass-card project-card reveal" data-tilt>
+        <div class="project-icon"><i class="fas fa-utensils"></i></div>
+        <h3>Foodstall</h3>
+        <p>Simple and responsive website for displaying food products with an attractive and user-friendly layout.</p>
+        <div class="project-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="glass-card project-card reveal" data-tilt>
+        <div class="project-icon"><i class="fas fa-book-open"></i></div>
+        <h3>BookSky</h3>
+        <p>User-friendly platform for managing and browsing books with intuitive navigation and clean design.</p>
+        <div class="project-tags">
+          <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+        </div>
+      </div>
+      <div class="glass-card project-card reveal" data-tilt>
+        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>MATLAB GUI</h3>
+        <p>Interactive application for real-time data visualization with dynamic charts and user-configurable parameters.</p>
+        <div class="project-tags">
+          <span>MATLAB</span><span>GUI</span><span>Data Visualization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRENGTHS SECTION -->
+<section id="strengths">
+  <div class="container">
+    <h2 class="section-title reveal">My <span class="grad">Strengths</span></h2>
+    <div class="strengths-grid">
+      <div class="strength-item reveal">
+        <div class="strength-icon"><i class="fas fa-brain"></i></div>
+        <h3>Analytical Thinking</h3>
+      </div>
+      <div class="strength-item reveal">
+        <div class="strength-icon"><i class="fas fa-bolt"></i></div>
+        <h3>Fast Learner</h3>
+      </div>
+      <div class="strength-item reveal">
+        <div class="strength-icon"><i class="fas fa-puzzle-piece"></i></div>
+        <h3>Problem Solving</h3>
+      </div>
+      <div class="strength-item reveal">
+        <div class="strength-icon"><i class="fas fa-search"></i></div>
+        <h3>Attention to Detail</h3>
+      </div>
+      <div class="strength-item reveal">
+        <div class="strength-icon"><i class="fas fa-users"></i></div>
+        <h3>Team Collaboration</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title reveal">Get In <span class="grad">Touch</span></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let's Talk</h3>
+        <p>Feel free to reach out for collaborations, projects, or just a friendly chat!</p>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <a href="tel:9786107285">9786107285</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:harisudhan24042007@gmail.com">harisudhan24042007@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Chennai, Tamil Nadu</span>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/hari-sudhan-629456343" target="_blank">LinkedIn Profile</a>
+        </div>
+      </div>
+      <div class="contact-form-wrap reveal">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="cName">Your Name</label>
+            <input type="text" id="cName" placeholder="Enter your name" required />
+          </div>
+          <div class="form-group">
+            <label for="cEmail">Your Email</label>
+            <input type="email" id="cEmail" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group">
+            <label for="cMsg">Message</label>
+            <textarea id="cMsg" rows="5" placeholder="Type your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">HS<span>.</span></div>
+    <p>HariSudhan M — Frontend Developer</p>
+    <p>Chennai, Tamil Nadu | 9786107285 | harisudhan24042007@gmail.com</p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/hari-sudhan-629456343" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:harisudhan24042007@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="tel:9786107285"><i class="fas fa-phone"></i></a>
+    </div>
+    <p class="footer-copy">&copy; 2026 HariSudhan M. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- VOICE ASSISTANT -->
+<button id="voiceBtn" aria-label="Voice Assistant">
+  <i class="fas fa-microphone"></i>
+</button>
+
+<!-- SUCCESS POPUP -->
+<div id="successPopup" class="popup-overlay">
+  <div class="popup-box">
+    <div class="popup-icon"><i class="fas fa-check-circle"></i></div>
+    <h3>Message Sent!</h3>
+    <p>Thank you for contacting me. I will connect with you soon.</p>
+    <button class="btn btn-primary" id="popupClose">Close</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
